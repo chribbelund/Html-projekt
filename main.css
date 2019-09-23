@@ -110,3 +110,7 @@ input[type=text], select, textarea {
     resize: vertical;
     box-sizing: border-box;
 }
+
+#chribbe{
+    cursor: url(cursor.cur), progress;
+}
