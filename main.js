@@ -1,4 +1,4 @@
-function skillbar() {
+/*function skillbar() {
   var elem = document.getElementById("skills");
   var width = 1;
   var id = setInterval(frame, 10);
@@ -11,11 +11,9 @@ function skillbar() {
     }
   }
 }
-
-$(document).ready(function(){
-  $("#hamburger").click(function(){
-    if($("#hamburger").text() == "☰"){
-      $("#hamburger").text("")
-    }
-  })
-})
+*/
+$(document).ready(function () {
+  $("#hamburger").click(function () {
+    $(".navbarli").toggle("slow");
+  });
+});
