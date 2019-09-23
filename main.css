@@ -1,4 +1,7 @@
-#map { height: 40em; }
+#map {
+    height: 40em; 
+    margin: 0;
+}
 
 .navbarli {
     list-style-type: none;
@@ -17,14 +20,17 @@
 }
 
 nav {
-    width: 100vw;
+    width: 100%;
     background-color: #D6EFFF;
+    margin: 0;
+    overflow: hidden;
 }
 
 .navbarul {
     margin: 0;
     padding: 0;
     display: flex;
+    overflow: hidden;
 }
 
 body {
@@ -35,7 +41,10 @@ body {
     display: none;
 }
 
-@media only screen and (max-width: 500px) {
+/*
+Navbar scaling
+*/
+@media only screen and (max-width: 900px) {
     .navbarul {
         flex-direction: column;
     }
@@ -58,10 +67,15 @@ body {
     }
 }
 
+/*
+Kontakta oss form
+*/
 .form {
     border-radius: 3vw;
     background-color: grey;
     padding: 2vw;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 input[type=text], select, textarea {
