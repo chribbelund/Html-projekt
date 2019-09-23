@@ -1,1 +1,59 @@
 #map { height: 40em; }
+
+.navbarli {
+    list-style-type: none;
+    margin: 0 2vw;
+    font-size: 3vh;
+}
+
+.navbara {
+    text-decoration: none; 
+    color: black;
+    padding: 2vw;
+    font-family: monospace;
+}
+.navbara:hover {
+    background-color: #C6E9FF;
+}
+
+nav {
+    width: 100vw;
+    background-color: #D6EFFF;
+}
+
+.navbarul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+body {
+    margin: 0;
+}
+
+#hamburger {
+    display: none;
+}
+
+@media only screen and (max-width: 500px) {
+    .navbarul {
+        flex-direction: column;
+    }
+    .navbarli {
+        margin: 0;
+    }
+    .navbara {
+        display: block;
+    }
+    #hamburger {
+        display: block;
+
+        padding: 2vw;
+        font-size: 2vh;
+        background-color: #AFE0FF;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        align-self: flex-start;
+    }
+}
