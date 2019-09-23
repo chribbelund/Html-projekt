@@ -79,3 +79,20 @@ img {
     margin-right: auto;
    
   }
+
+.form {
+    border-radius: 3vw;
+    background-color: grey;
+    padding: 2vw;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 2vw;
+    border: 1px solid grey;
+    border-radius: 1vw;
+    margin-top: 1vw;
+    margin-bottom: 3vw;
+    resize: vertical;
+    box-sizing: border-box;
+}
