@@ -1,4 +1,7 @@
-#map { height: 40em; }
+#map {
+    height: 40em; 
+    margin: 0;
+}
 
 .navbarli {
     list-style-type: none;
@@ -17,14 +20,17 @@
 }
 
 nav {
-    width: 100vw;
+    width: 100%;
     background-color: #D6EFFF;
+    margin: 0;
+    overflow: hidden;
 }
 
 .navbarul {
     margin: 0;
     padding: 0;
     display: flex;
+    overflow: hidden;
 }
 
 body {
@@ -35,7 +41,10 @@ body {
     display: none;
 }
 
-@media only screen and (max-width: 500px) {
+/*
+Navbar scaling
+*/
+@media only screen and (max-width: 900px) {
     .navbarul {
         flex-direction: column;
     }
@@ -86,4 +95,51 @@ body {
 
 .skills{
     float: right;
+#slideshow { 
+    margin: 50px auto; 
+    position: static; 
+    width: 60px; 
+    height: 60px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 30px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+  }
+
+/*
+Kontakta oss form
+*/
+.form {
+    border-radius: 3vw;
+    background-color: grey;
+    padding: 2vw;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 2vw;
+    border: 1px solid grey;
+    border-radius: 1vw;
+    margin-top: 1vw;
+    margin-bottom: 3vw;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+#chribbe{
+    cursor: url(cursor.cur), progress;
 }
