@@ -9,7 +9,7 @@
 () navbar
 () bildspel
 () animering
-() validera formulär med regex och ajax
-() navicon i mobillayout (hamburgare)
+(x) validera formulär med regex och ajax
+(x) navicon i mobillayout (hamburgare)
 (x) karta 
-() spara kontaktdata i en json
+(x) spara kontaktdata i en json
