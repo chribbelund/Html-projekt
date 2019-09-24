@@ -12,11 +12,11 @@
   }
 }
 */
-$(document).ready(function () {
-  $("#hamburger").click(function () {
-    $(".navbarli").toggle("slow");
-  });
+
+$("#hamburger").click(function () {
+  $(".navbarli").toggle("slow");
 });
+
 
 
 $("#slideshow > div:gt(0)").hide();

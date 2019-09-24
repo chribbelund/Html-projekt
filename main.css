@@ -121,20 +121,20 @@ img {
 Kontakta oss form
 */
 #form {
-    border-radius: 3vw;
+    border-radius: 10%;
     background-color: grey;
-    padding: 2vw;
+    padding: 2%;
     margin: 0;
     overflow-x: hidden;
 }
 
 input[type=text], select, textarea {
     width: 100%;
-    padding: 2vw;
-    border: 1px solid grey;
-    border-radius: 1vw;
-    margin-top: 1vw;
-    margin-bottom: 3vw;
+    padding: 1%;
+    border: 1% solid grey;
+    border-radius: 1%;
+    margin-top: 1%;
+    margin-bottom: 2%;
     resize: vertical;
     box-sizing: border-box;
 }   
