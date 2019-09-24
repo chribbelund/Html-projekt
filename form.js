@@ -10,15 +10,23 @@ $('form').submit(function (event) {
 
 $(document).ready(function () {
     var json = JSON.parse(localStorage.getItem('jsonStorage'));
-    console.log(json);
-    populateForm('#theform', json);
+    populateForm(json);
 });
 
 
-function populateForm(form, data) {
+function populateForm(data) {
     for(i in data){
-        console.log(data[i].name);
-        console.log(data[i].value);
         $('input[name=' + data[i].name + ']').val(data[i].value);
     }
 }
+
+
+$("#name").keyup(function(){
+    var namn = $("#name").val();
+    if (namn.length < 10) {
+        console.log("kort namn");
+    }
+    else {
+        console.log("namn ok");
+    }
+});
