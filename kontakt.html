@@ -28,24 +28,29 @@
     </nav>
     <div id="map"></div>
 
-    <div class="form">
-        <form action="">
+    <div id="form">
+        <form action="" id="theform">
             <label for="name">Namn</label>
-            <input type="text" id="name" placeholder="Förnamn Efternamn">
+            <input type="text" name="name" placeholder="Förnamn Efternamn">
 
             <label for="mail">Mail</label>
-            <input type="text" id="mail" placeholder="your@mail.com">
+            <input type="text" name="mail" placeholder="your@mail.com">
 
-            <label for="phone">Telefonnummer</label>
-            <input type="text" id="phone" placeholder="0701234567">
+            <label for="nummer">Telefonnummer</label>
+            <input type="text" name="nummer" placeholder="0701234567">
 
-            <label for="text">Ditt Meddelande</label>
-            <input type="text" id="meddelande" placeholder="Ditt meddelande">
-            <input type="submit" value="Submit">
+            <label for="meddelande">Ditt Meddelande</label>
+            <input type="text" name="meddelande" placeholder="Ditt meddelande">
+            <input type="submit">
+            
         </form>
+        
+    </div>
+
     </div>
 </body>
 <script src="jquery-3.4.1.js"></script>
+<script src="form.js"></script>
 <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
 <script src="main.js"></script>
 <script src="map.js"></script>

@@ -120,7 +120,7 @@ img {
 /*
 Kontakta oss form
 */
-.form {
+#form {
     border-radius: 3vw;
     background-color: grey;
     padding: 2vw;
@@ -138,19 +138,10 @@ input[type=text], select, textarea {
     resize: vertical;
     box-sizing: border-box;
 }   
+
 .text{
     position: relative;
 }
-
-
-
-
-
-
-
-
-
-
 
 #chribbe{
     cursor: url(cursor.cur), progress;
