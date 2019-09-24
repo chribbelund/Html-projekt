@@ -1,3 +1,7 @@
+/*
+    Fixa text brevid alla fält som säger om inmatninger är korrekt eller inte
+*/
+
 var nameBoolean = false;
 var mailBoolean = false;
 var nummerBoolean = false;
@@ -26,7 +30,6 @@ $(document).ready(function () {
     var json = JSON.parse(localStorage.getItem('jsonStorage'));
     populateForm(json);
 });
-
 
 function populateForm(data) {
     for (i in data) {
