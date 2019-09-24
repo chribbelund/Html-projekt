@@ -21,54 +21,15 @@ $(document).ready(function () {
 
 $("#slideshow > div:gt(0)").hide();
 
-setInterval(function() { 
+setInterval(function () {
   $('#slideshow > div:first')
     .fadeOut(1000)
     .next()
     .fadeIn(1000)
     .end()
     .appendTo('#slideshow');
-},  3000);
+}, 3000);
 
-
-var playing = true;
-var pauseButton = document.getElementById('pause');
-var myIndex = 0;
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-    myIndex++;
-    if (myIndex > x.length) {
-        myIndex = 1
-    }
-    x[myIndex - 1].style.display = "block";
+function store() {
+  var inputName = document
 }
-
-
-function pauseSlideshow(){
-    pauseButton.innerHTML = 'Play';
-    playing = false;
-    clearInterval(slideInterval);
-}
-
-function playSlideshow(){
-    pauseButton.innerHTML = 'Pause';
-    playing = true;
-    slideInterval = setInterval(carousel, 2000);
-}
-
-pauseButton.onclick = function(){
-    if(playing){
-        pauseSlideshow();
-    }
-    else{
-        playSlideshow();
-    }
-};
-
-carousel();
-playSlideshow();
