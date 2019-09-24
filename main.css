@@ -65,42 +65,27 @@ Navbar scaling
         cursor: pointer;
         align-self: flex-start;
     }
-    .allMembers{
-        margin-left: 45%;
-        margin-top: auto;
-    }
 }
 
 @media only screen and (min-width: 901px){
 
-    .allMembers{
-        left: 33%;
-        margin-top: auto;
-    }
 }
 
 .allMembers{
-    position: relative;
-    float: left;
-    
+    flex: 33.33%;
+    padding: 5px;
 }
+.row{
+    display: flex;
+  }
 
-.allMembers img{
+/*.allMembers img{
     margin: 10px;
     border: 3px solid #000;
     box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
     max-width: 25vw;
-}
+}*/
 
-/*.membersText{
-    position: absolute;
-    top: 78%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 50%;
-    font-size: 18px;
-}
-*/
 .members{
     float: left;
 }
@@ -108,6 +93,7 @@ Navbar scaling
 .skills{
     float: right;
 }
+
 #slideshow { 
     margin: 50px auto; 
     position: static; 
