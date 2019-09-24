@@ -71,6 +71,7 @@ Navbar scaling
     position: relative;
     float: left;
     flex-direction: row;
+    min-width: 80%;
 }
 
 .allMembers img{
