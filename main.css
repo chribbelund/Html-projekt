@@ -71,11 +71,18 @@ Navbar scaling
     }
 }
 
+@media only screen and (min-width: 901px){
+
+    .allMembers{
+        left: 33%;
+        margin-top: auto;
+    }
+}
+
 .allMembers{
     position: relative;
     float: left;
-    top: 50%;
-    transform: translate(0, -50%);
+    
 }
 
 .allMembers img{
