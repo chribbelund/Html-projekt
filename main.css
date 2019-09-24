@@ -65,12 +65,17 @@ Navbar scaling
         cursor: pointer;
         align-self: flex-start;
     }
+    .allMembers{
+        margin-left: 45%;
+        margin-top: auto;
+    }
 }
 
 .allMembers{
     position: relative;
     float: left;
-    flex-direction: row;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 
 .allMembers img{
@@ -78,11 +83,9 @@ Navbar scaling
     border: 3px solid #000;
     box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
     max-width: 25vw;
-    margin-left: 160%;
-    margin-right: auto;
 }
 
-.membersText{
+/*.membersText{
     position: absolute;
     top: 78%;
     left: 50%;
@@ -90,7 +93,7 @@ Navbar scaling
     opacity: 50%;
     font-size: 18px;
 }
-
+*/
 .members{
     float: left;
 }
