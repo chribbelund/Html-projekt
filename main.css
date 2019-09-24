@@ -4,8 +4,8 @@
     list-style-type: none;
     margin: 0 2vw;
     font-size: 3vh;
+    
 }
-
 .navbara {
     text-decoration: none; 
     color: black;
@@ -68,7 +68,7 @@ body {
 
 #slideshow > div { 
     position: absolute; 
-    top: 30px; 
+    top: 60px; 
     left: 10px; 
     right: 10px; 
     bottom: 10px; 
@@ -77,8 +77,8 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-   
-  }
+}
+
 
 .form {
     border-radius: 3vw;
@@ -95,4 +95,43 @@ input[type=text], select, textarea {
     margin-bottom: 3vw;
     resize: vertical;
     box-sizing: border-box;
+}   
+.text{
+    position: relative;
 }
+
+
+
+
+
+
+
+/*
+non-essential styles:
+just for appearance; change whatever you want
+
+
+.slide{
+	font-size: 40px;
+	padding: 40px;
+	box-sizing: border-box;
+	background: #333;
+	color: #fff;
+}
+
+.slide:nth-of-type(1){
+	background: red;
+}
+.slide:nth-of-type(2){
+	background: orange;
+}
+.slide:nth-of-type(3){
+	background: green;
+}
+.slide:nth-of-type(4){
+	background: blue;
+}
+.slide:nth-of-type(5){
+	background: purple;
+}   
+*/
