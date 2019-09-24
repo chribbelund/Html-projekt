@@ -7,8 +7,8 @@
     list-style-type: none;
     margin: 0 2vw;
     font-size: 3vh;
+    
 }
-
 .navbara {
     text-decoration: none; 
     color: black;
@@ -71,9 +71,6 @@ Navbar scaling
     position: relative;
     float: left;
     flex-direction: row;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .allMembers img{
@@ -81,6 +78,8 @@ Navbar scaling
     border: 3px solid #000;
     box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
     max-width: 25vw;
+    margin-left: 160%;
+    margin-right: auto;
 }
 
 .membersText{
@@ -110,7 +109,7 @@ Navbar scaling
 
 #slideshow > div { 
     position: absolute; 
-    top: 30px; 
+    top: 60px; 
     left: 10px; 
     right: 10px; 
     bottom: 10px; 
@@ -119,8 +118,8 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-   
-  }
+}
+
 
 /*
 Kontakta oss form
@@ -142,7 +141,20 @@ input[type=text], select, textarea {
     margin-bottom: 3vw;
     resize: vertical;
     box-sizing: border-box;
+}   
+.text{
+    position: relative;
 }
+
+
+
+
+
+
+
+
+
+
 
 #chribbe{
     cursor: url(cursor.cur), progress;
