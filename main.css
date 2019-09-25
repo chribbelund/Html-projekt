@@ -120,24 +120,6 @@ img {
 /*
 Kontakta oss form
 */
-#form {
-    border-radius: 10%;
-    background-color: grey;
-    padding: 2%;
-    margin: 0;
-    overflow-x: hidden;
-}
-
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 1%;
-    border: 1% solid grey;
-    border-radius: 1%;
-    margin-top: 1%;
-    margin-bottom: 2%;
-    resize: vertical;
-    box-sizing: border-box;
-}   
 
 .text{
     position: relative;

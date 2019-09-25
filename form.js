@@ -1,12 +1,13 @@
 /*
     Fixa text brevid alla fält som säger om inmatninger är korrekt eller inte
+    Fixa namn regex så den inte tillåter siffror
 */
 
 var nameBoolean = false;
 var mailBoolean = false;
 var nummerBoolean = false;
 var meddelandeBoolean = false;
-$('form').submit(function (event) {
+$('form').submit(function(event) {
     kollaNamn();
     kollaMail();
     kollaNummer();
@@ -19,14 +20,13 @@ $('form').submit(function (event) {
         $('#test').append(form);
         localStorage.setItem('jsonStorage', jsonform);
         alert("Tack för ditt meddelande");
-    }
-    else {
+    } else {
         event.preventDefault();
         alert("DU SKREV FEL FITTNOOB");
     }
 });
 
-$(document).ready(function () {
+$(document).ready(function() {
     var json = JSON.parse(localStorage.getItem('jsonStorage'));
     populateForm(json);
 });
@@ -39,12 +39,13 @@ function populateForm(data) {
 
 function kollaNamn() {
     var name = $("#name").val();
-    var pattern = /[a-öA-Ö]{3}/;
+    var pattern = /^[a-öA-Ö]{3,}$/;
     if (pattern.test(name) == true) {
         nameBoolean = true;
-    }
-    else {
+        document.getElementById("namnOk").innerHTML = "Ok";
+    } else {
         nameBoolean = false;
+        document.getElementById("namnOk").innerHTML = "Ej ok";
     }
 }
 
@@ -53,9 +54,10 @@ function kollaMail() {
     var pattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (pattern.test(mail) == true) {
         mailBoolean = true;
-    }
-    else {
+        document.getElementById("mailOk").innerHTML = "Ok";
+    } else {
         mailBoolean = false;
+        document.getElementById("mailOk").innerHTML = "Ej ok";
     }
 }
 
@@ -64,9 +66,10 @@ function kollaNummer() {
     var pattern = /^\d{10}$/;
     if (pattern.test(nummer) == true) {
         nummerBoolean = true;
-    }
-    else {
+        document.getElementById("nummerOk").innerHTML = "Ok";
+    } else {
         nummerBoolean = false;
+        document.getElementById("nummerOk").innerHTML = "Ej ok";
     }
 }
 
@@ -75,24 +78,25 @@ function kollaMeddelande() {
     var pattern = /.{1,}/;
     if (pattern.test(meddelande) == true) {
         meddelandeBoolean = true;
-    }
-    else {
+        document.getElementById("meddelandeOk").innerHTML = "Ok";
+    } else {
         meddelandeBoolean = false;
+        document.getElementById("meddelandeOk").innerHTML = "Ej ok";
     }
 }
 
-$("#name").keyup(function () {
+$("#name").keyup(function() {
     kollaNamn();
 });
 
-$("#mail").keyup(function () {
+$("#mail").keyup(function() {
     kollaMail();
 });
 
-$("#nummer").keyup(function () {
+$("#nummer").keyup(function() {
     kollaNummer();
 });
 
-$("#meddelande").keyup(function () {
+$("#meddelande").keyup(function() {
     kollaMeddelande();
-});
+}); 

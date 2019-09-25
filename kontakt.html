@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Kontakta oss</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="form.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
 </head>
 
@@ -29,22 +30,34 @@
     <div id="map"></div>
 
     <div id="form">
-        <form action="">
+        <form action="" id="formular">
             <label for="name">Namn</label>
-            <input type="text" name="name" id="name" placeholder="Förnamn Efternamn">
+            <br>
+            <input type="text" name="name" id="name" placeholder="Förnamn Efternamn" title="Minst tre bokstäver">
+            <label for="namn" id="namnOk">Ej ok</label>
+            <br>
 
             <label for="mail">Mail</label>
-            <input type="text" name="mail" id="mail" placeholder="your@mail.com">
+            <br>
+            <input type="text" name="mail" id="mail" placeholder="your@mail.com" title="T.ex. test@mail.com">
+            <label for="mail" id="mailOk">Ej ok</label>
+            <br>
 
             <label for="nummer">Telefonnummer</label>
-            <input type="text" name="nummer" id="nummer" placeholder="0701234567">
+            <br>
+            <input type="text" name="nummer" id="nummer" placeholder="0701234567" title="Tio siffror">
+            <label for="nummer" id="nummerOk">Ej ok</label>
+            <br>
 
             <label for="meddelande">Ditt Meddelande</label>
-            <input type="text" name="meddelande" id="meddelande" placeholder="Ditt meddelande">
+            <br>
+            <input type="text" name="meddelande" id="meddelande" placeholder="Ditt meddelande" title="Minst ett tecken">
+            <label for="meddelande" id="meddelandeOk">Ej ok</label>
+            <br>
             <input type="submit">
-            
+
         </form>
-        
+
     </div>
 
     </div>

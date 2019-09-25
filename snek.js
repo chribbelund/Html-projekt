@@ -3,6 +3,7 @@ window.onload = function () {
     ctx = canv.getContext("2d");
     document.addEventListener("keydown", keyPush);
     setInterval(game, 1000 / 15);
+    this.sidpoang.innerHTML
 }
 px = py = 10;
 gs = tc = 20;
@@ -41,6 +42,7 @@ function game() {
             if (score > highscore) {
                 highscore = score;
                 highscorehtml.innerHTML = highscore;
+                localStorage.highscore = highscore;
             }
             tail = 5;
             score = 0;
