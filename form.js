@@ -1,8 +1,3 @@
-/*
-    Fixa text brevid alla fält som säger om inmatninger är korrekt eller inte
-    Fixa namn regex mellanslag
-*/
-
 var nameBoolean = false;
 var mailBoolean = false;
 var nummerBoolean = false;
@@ -14,11 +9,8 @@ $('form').submit(function (event) {
     kollaMeddelande();
     if (nameBoolean == true && mailBoolean == true && nummerBoolean == true && meddelandeBoolean == true) {
         event.preventDefault();
-
-        var form = $('form').serialize();
         var jsonform = JSON.stringify($("form").serializeArray());
-        $('#test').append(form);
-        localStorage.setItem('jsonStorage', jsonform);
+        localStorage.setItem("jsonStorage", jsonform);
         alert("Tack för ditt meddelande");
         var json = JSON.parse(localStorage.getItem('jsonStorage'));
         clearForm(json);
@@ -49,7 +41,6 @@ function populateForm(data) {
 
 function clearForm(data) {
     for (i in data) {
-        console.log(i);
         $('input[name=' + data[i].name + ']').val("");
     }
 }
@@ -102,6 +93,9 @@ function kollaMeddelande() {
     }
 }
 
+/* 
+    Kör kolla funktionerna varje gång man klickar på en tangent i den valda form rutan
+*/
 $("#name").keyup(function () {
     kollaNamn();
 });
