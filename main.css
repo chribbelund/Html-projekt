@@ -1,3 +1,7 @@
+*{
+    font-family:sans-serif;
+}
+
 #map {
     height: 40em; 
     margin: 0;
@@ -70,6 +74,9 @@ Navbar scaling
 @media only screen and (min-width: 901px){
 
 }
+/*
+    Medlems formatering for bilder och border
+*/
 
 .allMembers{
     flex: 33.33%;
@@ -79,20 +86,24 @@ Navbar scaling
     display: flex;
   }
 
-/*.allMembers img{
-    margin: 10px;
-    border: 3px solid #000;
-    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
-    max-width: 25vw;
-}*/
+.allMembers img{
+    border-radius: 33%;
+}
 
 .members{
     float: left;
+}
+.members img{
+    border-radius: 33%;
 }
 
 .skills{
     float: right;
 }
+
+/*
+    Slideshow kod
+*/
 
 #slideshow { 
     margin: 50px auto; 
