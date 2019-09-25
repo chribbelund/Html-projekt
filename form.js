@@ -7,7 +7,7 @@ var nameBoolean = false;
 var mailBoolean = false;
 var nummerBoolean = false;
 var meddelandeBoolean = false;
-$('form').submit(function(event) {
+$('form').submit(function (event) {
     kollaNamn();
     kollaMail();
     kollaNummer();
@@ -20,20 +20,37 @@ $('form').submit(function(event) {
         $('#test').append(form);
         localStorage.setItem('jsonStorage', jsonform);
         alert("Tack för ditt meddelande");
+        var json = JSON.parse(localStorage.getItem('jsonStorage'));
+        clearForm(json);
+        kollaNamn();
+        kollaMail();
+        kollaNummer();
+        kollaMeddelande();
     } else {
         event.preventDefault();
-        alert("DU SKREV FEL FITTNOOB");
+        alert("Du har skrivit fel i någon av rutorna");
     }
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
     var json = JSON.parse(localStorage.getItem('jsonStorage'));
     populateForm(json);
+    kollaNamn();
+    kollaMail();
+    kollaNummer();
+    kollaMeddelande();
 });
 
 function populateForm(data) {
     for (i in data) {
         $('input[name=' + data[i].name + ']').val(data[i].value);
+    }
+}
+
+function clearForm(data) {
+    for (i in data) {
+        console.log(i);
+        $('input[name=' + data[i].name + ']').val("");
     }
 }
 
@@ -85,18 +102,18 @@ function kollaMeddelande() {
     }
 }
 
-$("#name").keyup(function() {
+$("#name").keyup(function () {
     kollaNamn();
 });
 
-$("#mail").keyup(function() {
+$("#mail").keyup(function () {
     kollaMail();
 });
 
-$("#nummer").keyup(function() {
+$("#nummer").keyup(function () {
     kollaNummer();
 });
 
-$("#meddelande").keyup(function() {
+$("#meddelande").keyup(function () {
     kollaMeddelande();
 }); 
