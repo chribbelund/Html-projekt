@@ -48,7 +48,7 @@ body {
 /*
 Navbar scaling
 */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1080px) {
     .navbarul {
         flex-direction: column;
     }
@@ -71,9 +71,6 @@ Navbar scaling
     }
 }
 
-@media only screen and (min-width: 901px){
-
-}
 /*
     Medlems formatering for bilder och border
 */
