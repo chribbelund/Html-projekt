@@ -13,3 +13,5 @@
 (x) navicon i mobillayout (hamburgare)
 (x) karta 
 (x) spara kontaktdata i en json
+
+fixa navbaren, minimerad när man går in i mobile view och se till så att den maximeras när man lämnar det

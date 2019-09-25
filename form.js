@@ -1,6 +1,6 @@
 /*
     Fixa text brevid alla fält som säger om inmatninger är korrekt eller inte
-    Fixa namn regex så den inte tillåter siffror
+    Fixa namn regex mellanslag
 */
 
 var nameBoolean = false;
@@ -39,7 +39,7 @@ function populateForm(data) {
 
 function kollaNamn() {
     var name = $("#name").val();
-    var pattern = /^[a-öA-Ö]{3,}$/;
+    var pattern = /^[a-öA-Ö]{3,}\s?([a-öA-Ö]{1,})?$/;
     if (pattern.test(name) == true) {
         nameBoolean = true;
         document.getElementById("namnOk").innerHTML = "Ok";
