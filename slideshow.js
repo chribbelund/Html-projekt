@@ -35,7 +35,7 @@ $("#pauseSlideshow").click(function () {
     else {
         startSlider();
         buttonPressed = false;
-        document.getElementById("namnOk").innerHTML = "Pausa";
+        document.getElementById("pauseSlideshow").innerHTML = "Pausa";
     }
 });
 
