@@ -33,3 +33,37 @@ setInterval(function () {
 function store() {
   var inputName = document
 }
+
+const slideshowImages = document.querySelectorAll(".pictures");
+
+const nextImageDelay = 3000;
+let currentImageCounter = 0;
+
+
+slideshowImages[currentImageCounter].style.opacity = 1;
+
+setInterval(nextImage, nextImageDelay);
+
+function nextImage() {
+
+    slideshowImages[currentImageCounter].style.zIndex = -2;
+    const tempCounter = currentImageCounter;
+    setTimeout(()=>{
+      slideshowImages[tempCounter].style.opacity = 0;
+    }, 1000);
+    currentImageCounter = (currentImageCounter + 1) % slideshowImages.length;
+
+    slideshowImages[currentImageCounter].style.opacity = 1;
+    slideshowImages[currentImageCounter].style.zIndex = -1;
+
+
+}
+
+var mySlideshow = document.getElementById(".pictures"); 
+
+function playPause() { 
+  if (mySlideshow.paused) 
+    mySlideshow.play(); 
+  else 
+    mySlideshow.pause(); 
+}
