@@ -1,3 +1,7 @@
+*{
+    font-family:sans-serif;
+}
+
 #map {
     height: 40em; 
     margin: 0;
@@ -51,7 +55,7 @@ body {
 /*
 Navbar scaling
 */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1080px) {
     .navbarul {
         flex-direction: column;
     }
@@ -75,47 +79,44 @@ Navbar scaling
     }
 }
 
+/*
+    Medlems formatering for bilder och border
+*/
+
 .allMembers{
-    position: relative;
-    float: left;
-    flex-direction: row;
+    flex: 33.33%;
+    padding: 5px;
 }
+.row{
+    display: flex;
+  }
 
 .allMembers img{
-    margin: 10px;
-    border: 3px solid #000;
-    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
-    max-width: 25vw;
-    margin-left: 160%;
-    margin-right: auto;
-}
-
-.membersText{
-    position: absolute;
-    top: 78%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 50%;
-    font-size: 18px;
+    border-radius: 33%;
 }
 
 .members{
     float: left;
 }
+.members img{
+    border-radius: 33%;
+}
 
 .skills{
     float: right;
 }
+
 /*
-Startsida & bildspel
+    Slideshow kod
 */
-.menu{
-    
-    display: flex;
-    flex-direction: row 1fr 1fr 1fr 1fr;
-    justify-content: space-evenly;
-    align-items: center;
-    font-family: 'Big Shoulders Display', cursive;
+
+#slideshow { 
+    margin: 50px auto; 
+    position: static; 
+    width: 60px; 
+    height: 60px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
 }
 
 .controls{
@@ -129,14 +130,14 @@ Startsida & bildspel
     justify-content: center;
     margin: 2em;
 }
-.container{
+/*.container{
     display: grid;
     grid-template-rows:
     margin-top: 2em;
     justify-content: center;
     align-items: center;
         
-}
+}*/
 .pictures { 
     display: grid;
    
@@ -178,25 +179,10 @@ body{
 /*
 Kontakta oss form
 */
-.form {
-    border-radius: 3vw;
-    background-color: grey;
-    padding: 2vw;
-    margin: 0;
-    overflow-x: hidden;
+
+.text{
+    position: relative;
 }
-
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 2vw;
-    border: 1px solid grey;
-    border-radius: 1vw;
-    margin-top: 1vw;
-    margin-bottom: 3vw;
-    resize: vertical;
-    box-sizing: border-box;
-}   
-
 
 #chribbe{
     cursor: url(cursor.cur), progress;

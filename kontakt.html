@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Kontakta oss</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="form.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
 </head>
 
@@ -28,24 +29,41 @@
     </nav>
     <div id="map"></div>
 
-    <div class="form">
-        <form action="">
+    <div id="form">
+        <form action="" id="formular">
             <label for="name">Namn</label>
-            <input type="text" id="name" placeholder="Förnamn Efternamn">
+            <br>
+            <input type="text" name="name" id="name" placeholder="Förnamn Efternamn" title="Minst tre bokstäver">
+            <label for="namn" id="namnOk">Ej ok</label>
+            <br>
 
             <label for="mail">Mail</label>
-            <input type="text" id="mail" placeholder="your@mail.com">
+            <br>
+            <input type="text" name="mail" id="mail" placeholder="your@mail.com" title="T.ex. test@mail.com">
+            <label for="mail" id="mailOk">Ej ok</label>
+            <br>
 
-            <label for="phone">Telefonnummer</label>
-            <input type="text" id="phone" placeholder="0701234567">
+            <label for="nummer">Telefonnummer</label>
+            <br>
+            <input type="text" name="nummer" id="nummer" placeholder="0701234567" title="Tio siffror">
+            <label for="nummer" id="nummerOk">Ej ok</label>
+            <br>
 
-            <label for="text">Ditt Meddelande</label>
-            <input type="text" id="meddelande" placeholder="Ditt meddelande">
-            <input type="submit" value="Submit">
+            <label for="meddelande">Ditt Meddelande</label>
+            <br>
+            <input type="text" name="meddelande" id="meddelande" placeholder="Ditt meddelande" title="Minst ett tecken">
+            <label for="meddelande" id="meddelandeOk">Ej ok</label>
+            <br>
+            <input type="submit">
+
         </form>
+
+    </div>
+
     </div>
 </body>
 <script src="jquery-3.4.1.js"></script>
+<script src="form.js"></script>
 <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
 <script src="main.js"></script>
 <script src="map.js"></script>

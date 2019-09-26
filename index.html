@@ -6,40 +6,41 @@
     <title>Projektsida</title>
 
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="slideshow.css">
     <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <div class="menu">
-        <nav>
-            <ul class="navbarul">
-                <button id="hamburger"> ☰ </button>
-                <li class="navbarli">
-                    <a href="index.html" class="navbara">Hem</a>
-                </li>
-                <li class="navbarli">
-                    <a href="portfolio.html" class="navbara">Portfolio</a>
-                </li>
-                <li class="navbarli">
-                    <a href="medlemmar.html" class="navbara">Våra medlemmar</a>
-                </li>
-                <li class="navbarli">
-                    <a href="kontakt.html" class="navbara">Kontakta oss</a>
-                </li>
-            </ul>
-        </nav>
+    <nav>
+        <ul class="navbarul">
+            <button id="hamburger"> ☰ </button>
+            <li class="navbarli">
+                <a href="index.html" class="navbara">Hem</a>
+            </li>
+            <li class="navbarli">
+                <a href="portfolio.html" class="navbara">Portfolio</a>
+            </li>
+            <li class="navbarli">
+                <a href="medlemmar.html" class="navbara">Våra Medlemmar</a>
+            </li>
+            <li class="navbarli">
+                <a href="kontakt.html" class="navbara">Kontakta Oss</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="slider">
+        <ul class="slides">
+            <li class="slide slide1"><img src="pictures/slideshow1.jpg" alt=""></li>
+            <li class="slide slide2"><img src="pictures/slideshow2.jpg" alt=""></li>
+            <li class="slide slide3"><img src="pictures/slideshow3.jpg" alt=""></li>
+            <li class="slide slide4"><img src="pictures/slideshow4.jpg" alt=""></li>
+            <li class="slide slide5"><img src="pictures/slideshow5.jpg" alt=""></li>
+            <li class="slide slide1"><img src="pictures/slideshow1.jpg" alt=""></li>
+        </ul>
+
     </div>
-    <div class="container">
-
-        <button class="btn" onclick="playPause()">Play/Pause</button>
-
-        <img class="pictures" src="pictures/zebra.jpg" alt="" style="width: 700px;height:350px;">
-        <img class="pictures" src="pictures/lejon.jpg" alt="" style="width:700px;height:350px;">
-        <img class="pictures" src="pictures/giraffe.jpg" alt="" style="width:700px;height:350px;">
-
-    </div>
-
+    <button id="pauseSlideshow">Paus</button>
     <div class="text">
         <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga alias numquam, maxime a quia voluptate
             aspernatur. Culpa voluptatem, sunt aliquid quam officia laboriosam consequatur, molestias at cupiditate ab
@@ -47,9 +48,13 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque dolorum voluptates praesentium corporis
             dolor voluptatibus quis, repellat aliquid consectetur nemo?</p>
     </div>
+
+
+
 </body>
 
 <script src="jquery-3.4.1.js"></script>
 <script src="main.js"></script>
+<script src="slideshow.js"></script>
 
 </html>
