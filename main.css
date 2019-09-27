@@ -187,3 +187,11 @@ Kontakta oss form
 #chribbe{
     cursor: url(cursor.cur), progress;
 }
+.skills{
+    display: grid;
+
+}
+#startText{
+    margin: 1em;
+    padding: 1em;
+}
