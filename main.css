@@ -92,14 +92,14 @@ Navbar scaling
   }
 
 .allMembers img{
-    border-radius: 33%;
+    border-radius: 33.33%;
 }
 
 .members{
     float: left;
 }
 .members img{
-    border-radius: 33%;
+    border-radius: 33.33%;
 }
 
 .skills{
