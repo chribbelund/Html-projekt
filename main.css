@@ -89,10 +89,11 @@ Navbar scaling
     }
     .members
     {
-        float: none;
-        display: flex;
         justify-content: center;
-
+        align-items: center;
+    }
+    .members{
+        float: left;
     }
 }
 
@@ -107,21 +108,25 @@ Navbar scaling
 .row{
     display: flex;
     justify-content: center;
+    align-items: center
   }
 
 .allMembers img{
     border-radius: 33.33%;
 }
 
-.members{
-    float: left;
-}
 .members img{
     border-radius: 33.33%;
 }
-
+.members{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
 .skills{
-    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
 
 /*
@@ -210,7 +215,7 @@ Kontakta oss form
 Skills CSS kod
 */
 .container{
-    width: 90%;
+    width: 400px;
     margin: 0 auto;
   }
   @keyframes load{
@@ -236,7 +241,7 @@ Skills CSS kod
   
   .bar{
     background-color: #EEE;
-    padding: 10px;
+    padding: 2px;
     border-radius: 15px;
     margin-bottom: 5px;
     font-size: 14px;
