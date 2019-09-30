@@ -261,13 +261,21 @@ Skills CSS kod
     width: calc(100% - 10px);
   }
 #portHeader{
+    
     margin: 1em;
 }
+
 .projekt{
     display: grid;
     grid-template-columns: 20% 80%;
+    
     grid-gap: 1em;
     margin: 2em;
-    height: auto;
-    max-width: 100%;
+    float: left;
+}
+
+#textProjekt{
+    width: 100%;
+    height: 100%;
+    float: left;
 }
