@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="sv">
 
 <head>
     <meta charset="utf-8">
@@ -12,8 +12,9 @@
 
 <body>
     <nav>
+        <button id="hamburger"> ☰ </button>
         <ul class="navbarul">
-            <button id="hamburger"> ☰ </button>
+
             <li class="navbarli">
                 <a href="index.html" class="navbara">Hem</a>
             </li>
@@ -31,11 +32,11 @@
     <div id="map"></div>
 
     <div id="form">
-        <form action="" id="formular">
+        <form id="formular">
             <label for="name">Namn</label>
             <br>
             <input type="text" name="name" id="name" placeholder="Förnamn Efternamn" title="Minst tre bokstäver">
-            <label for="namn" id="namnOk">Ej ok</label>
+            <label for="name" id="namnOk">Ej ok</label>
             <br>
 
             <label for="mail">Mail</label>
@@ -60,13 +61,12 @@
         </form>
 
     </div>
-
-    </div>
+    <script src="jquery-3.4.1.js"></script>
+    <script src="form.js"></script>
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="main.js"></script>
+    <script src="map.js"></script>
 </body>
-<script src="jquery-3.4.1.js"></script>
-<script src="form.js"></script>
-<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
-<script src="main.js"></script>
-<script src="map.js"></script>
+
 
 </html>

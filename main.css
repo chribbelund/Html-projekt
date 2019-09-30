@@ -1,158 +1,174 @@
-*{
-    font-family:'Big Shoulders Display', cursive;
+* {
+  font-family: 'Big Shoulders Display', cursive;
 }
 
 #map {
-    height: 40em; 
-    margin: 0;
+  height: 40em;
+  margin: 0;
 }
 
 .navbarli {
-    list-style-type: none;
-    margin: 0 2vw;
-    font-size: 3vh;
-    
-    
-    
+  list-style-type: none;
+  margin: 0 2vw;
+  font-size: 3vh;
 }
-.navbara {
-    display: flex;
-    text-decoration: none; 
-    color: black;
-    padding: 2vw;
-    font-family: 'Big Shoulders Display', cursive;
-    font-size: 1.3em;
-    justify-content: center;
 
+.navbara {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  padding: 2vw;
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 1.3em;
+  justify-content: center;
 }
+
 .navbara:hover {
-    background-color: #C6E9FF;
+  background-color: #C6E9FF;
 }
 
 nav {
-    width: 100%;
-    background-color: #D6EFFF;
-    margin: 0;
-    overflow: hidden;
+  width: 100%;
+  background-color: #D6EFFF;
+  margin: 0;
+  overflow: hidden;
 }
 
 .navbarul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    overflow: hidden;
-    justify-content: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 #hamburger {
-    display: none;
+  display: none;
 }
 
+.medlemImg{
+  width:90%;
+}
 /*
 Navbar scaling
 */
-@media only screen and (max-width: 1080px) {
-    .navbarul {
-        flex-direction: column;
-    }
-    .navbarli {
-        margin: 0;
-        justify-content: center;
-    }
-    .navbara {
-        display: block;
-    }
-    #hamburger {
-        display: block;
 
-        padding: 2vw;
-        font-size: 2vh;
-        background-color: #AFE0FF;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        align-self: flex-start;
-    }
-    .allMembers
-    {
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .row
-    {
-        flex-direction: column;
-    }
-    .members
-    {
-        justify-content: center;
-        align-items: center;
-    }
-    .members{
-        float: left;
-    }
+
+@media only screen and (max-width: 768px) {
+  .navbarul {
+    flex-direction: column;
+  }
+  .navbarli {
+    margin: 0;
+    justify-content: center;
+    display: none;
+  }
+  .navbara {
+    display: block;
+    z-index: 1;
+  }
+  #hamburger {
+    display: block;
+    padding: 2vw;
+    font-size: 2vh;
+    background-color: #AFE0FF;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    align-self: flex-start;
+  }
+  .allMembers {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .members {
+    justify-content: center;
+    align-items: center;
+  }
+  .members {
+    float: left;
+    padding: 1em;
+  }
+  .membersText {
+    padding: 1em;
+  }
+  .bar {
+    font-size: 3em !important;
+  }
 }
 
 /*
     Medlems formatering for bilder och border
 */
 
-.allMembers{
-    flex: 33.33%;
-    padding: 20px;
-}
-.row{
-    display: flex;
-    justify-content: center;
-    align-items: center
-  }
-
-.allMembers img{
-    border-radius: 33.33%;
+.allMembers {
+  flex: 33.33%;
+  padding: 20px;
 }
 
-.members img{
-    border-radius: 33.33%;
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center
 }
-.members{
-    display: flex;
-    justify-content: center;
-    align-items: center
+
+.allMembers img {
+  border-radius: 33.33%;
 }
-.skills{
-    display: flex;
-    justify-content: center;
-    align-items: center
+
+.members img {
+  border-radius: 33.33%;
+}
+
+.members {
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.membersText {
+  padding: 1em;
 }
 
 /*
     Slideshow kod
 */
 
-#slideshow { 
-    margin: 50px auto; 
-    position: static; 
-    width: 60px; 
-    height: 60px; 
-    padding: 10px; 
-    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+#slideshow {
+  margin: 50px auto;
+  position: static;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
-.controls{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.text {
+  display: grid;
+  justify-content: center;
+  margin: 2em;
 }
-.text{
-    display: grid;
-    justify-content: center;
-    margin: 2em;
-}
+
 /*.container{
     display: grid;
     grid-template-rows:
@@ -161,144 +177,129 @@ Navbar scaling
     align-items: center;
         
 }*/
-.pictures { 
-    display: grid;
-   
-    align-items: center;
-    transition: opacity 1s ease-in-out;
-    opacity: 0;
-    z-index: -1; 
-    padding: 20px; 
-    box-shadow: 0 0 20px rgba(51, 51, 77);
-    margin: 2em;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.pictures > div { 
-    top: 60px; 
-    left: 10px; 
-    right: 10px; 
-    bottom: 10px; 
-}
-.btn{
-    position: flex;
-    align-items: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+.pictures {
+  display: grid;
+  align-items: center;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+  z-index: -1;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(51, 51, 77);
+  margin: 2em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.pictures>div {
+  top: 60px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
 
-body{
-    background-color: rgba(250, 250, 250, 0.85);
-    font-family: 'Big Shoulders Display', cursive;
-    }
+.btn {
+  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-    nav{
-    text-align: center;
+body {
+  background-color: rgba(250, 250, 250, 0.85);
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+nav {
+  text-align: center;
 }
 
 /*
 Kontakta oss form
 */
 
-.text{
-    position: relative;
+.text {
+  position: relative;
 }
 
-#chribbe{
-    cursor: url(cursor.cur), progress;
+#chribbe {
+  cursor: url(cursor.cur), progress;
 }
 
 /*
 Skills CSS kod
 */
-.container{
-    width: 400px;
-    margin: 0 auto;
-  }
-  @keyframes load{
-    from {
-      width: 0%
-    }
-  }
-  @-webkit-keyframes load{
-    from {
-      width: 0%
-    }
-  }
-  @-moz-keyframes load{
-    from {
-      width: 0%
-    }
-  }
-  @-o-keyframes load{
-    from {
-      width: 0%
-    }
-  }
-  
-  .bar{
-    background-color: #EEE;
-    padding: 2px;
-    border-radius: 15px;
-    margin-bottom: 5px;
-    font-size: 14px;
-    color: #FFF;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-  }
-  .bar::before{
-    content:  attr(data-skill);
-    background-color: #f3b0ff;
-    display: inline-block;
-    padding: 5px 0 5px 10px;
-    border-radius: inherit;
-    animation: load 2s 0s;
-    -webkit-animation: load 2s 0s;
-    -moz-animation: load 2s 0s;
-    -o-animation: load 2s 0s;
-  }
-  
-  .bar.front::before{
-    background-color: #ffcc33;
-  }
-  .bar.back::before{
-    background-color: #a6cfe3;
-  }
-  
-  .bar.learning::before{
-    width: calc(20% - 10px);
-  }
-  .bar.basic::before{
-    width: calc(40% - 10px);
-  }
-  .bar.intermediate::before{
-    width: calc(60% - 10px);
-  }
-  .bar.advanced::before{
-    width: calc(80% - 10px);
-  }
-  .bar.expert::before{
-    width: calc(100% - 10px);
-  }
-#portHeader{
-    
-    margin: 1em;
+
+.container {
+  width: 95%;
+  margin: 0 auto;
 }
 
-.projekt{
-    display: grid;
-    grid-template-columns: 20% 80%;
-    
-    grid-gap: 1em;
-    margin: 2em;
-    float: left;
+@keyframes load {
+  from {
+    width: 0%
+  }
 }
 
-#textProjekt{
-    width: 100%;
-    height: 100%;
-    float: left;
+
+.bar {
+  background-color: #EEE;
+  padding: 2px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  font-size: 1.5em;
+  color: #FFF;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.bar::before {
+  content: attr(data-skill);
+  background-color: #f3b0ff;
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  border-radius: inherit;
+  animation: load 2s 0s;
+}
+
+.bar.front::before {
+  background-color: #ffcc33;
+}
+
+.bar.back::before {
+  background-color: #a6cfe3;
+}
+
+.bar.learning::before {
+  width: calc(20% - 10px);
+}
+
+.bar.basic::before {
+  width: calc(40% - 10px);
+}
+
+.bar.intermediate::before {
+  width: calc(60% - 10px);
+}
+
+.bar.advanced::before {
+  width: calc(80% - 10px);
+}
+
+.bar.expert::before {
+  width: calc(100% - 10px);
+}
+
+#portHeader {
+  margin: 1em;
+}
+
+.projekt {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-gap: 1em;
+  margin: 2em;
+  height: auto;
+  max-width: 100%;
 }
