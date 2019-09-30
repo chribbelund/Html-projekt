@@ -144,30 +144,7 @@ Navbar scaling
   padding: 1em;
 }
 
-/*
-    Slideshow kod
-*/
 
-#slideshow {
-  margin: 50px auto;
-  position: static;
-  width: 60px;
-  height: 60px;
-  padding: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-}
-
-.controls {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.text {
-  display: grid;
-  justify-content: center;
-  margin: 2em;
-}
 
 /*.container{
     display: grid;
