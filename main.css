@@ -1,5 +1,5 @@
 *{
-    font-family:sans-serif;
+    font-family:'Big Shoulders Display', cursive;
 }
 
 #map {
@@ -260,3 +260,14 @@ Skills CSS kod
   .bar.expert::before{
     width: calc(100% - 10px);
   }
+#portHeader{
+    margin: 1em;
+}
+.projekt{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-gap: 1em;
+    margin: 2em;
+    height: auto;
+    max-width: 100%;
+}
