@@ -101,7 +101,7 @@ Navbar scaling
         padding: 1em;
     }
     .bar{
-      font-size: 3em;
+      font-size: 3em !important;
     }
 }
 
