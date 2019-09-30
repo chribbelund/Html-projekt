@@ -77,6 +77,23 @@ Navbar scaling
         cursor: pointer;
         align-self: flex-start;
     }
+    .allMembers
+    {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .row
+    {
+        flex-direction: column;
+    }
+    .members
+    {
+        float: none;
+        display: flex;
+        justify-content: center;
+
+    }
 }
 
 /*
@@ -85,10 +102,11 @@ Navbar scaling
 
 .allMembers{
     flex: 33.33%;
-    padding: 5px;
+    padding: 20px;
 }
 .row{
     display: flex;
+    justify-content: center;
   }
 
 .allMembers img{
