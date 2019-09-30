@@ -50,6 +50,9 @@ body {
   display: none;
 }
 
+.medlemImg{
+  width:90%;
+}
 /*
 Navbar scaling
 */
@@ -197,7 +200,6 @@ Navbar scaling
 }
 
 .btn {
-  position: flex;
   align-items: center;
   display: block;
   margin-left: auto;
@@ -240,23 +242,6 @@ Skills CSS kod
   }
 }
 
-@-webkit-keyframes load {
-  from {
-    width: 0%
-  }
-}
-
-@-moz-keyframes load {
-  from {
-    width: 0%
-  }
-}
-
-@-o-keyframes load {
-  from {
-    width: 0%
-  }
-}
 
 .bar {
   background-color: #EEE;
@@ -276,9 +261,6 @@ Skills CSS kod
   padding: 5px 0 5px 10px;
   border-radius: inherit;
   animation: load 2s 0s;
-  -webkit-animation: load 2s 0s;
-  -moz-animation: load 2s 0s;
-  -o-animation: load 2s 0s;
 }
 
 .bar.front::before {
