@@ -30,13 +30,13 @@ function toggleNavbar() {
 
 
 function myFunction(x) {
-  if (x.matches && navbar==true) { // If media query matches
+  if (x.matches && navbar == true) {
     toggleNavbar();
   }
 }
 
-var x = window.matchMedia("(min-width: 768px)")
-myFunction(x) // Call listener function at run time
-x.addListener(myFunction) // Attach listener function on state changes
+var x = window.matchMedia("(min-width: 768px)");
+myFunction(x);
+x.addListener(myFunction);
 
 
