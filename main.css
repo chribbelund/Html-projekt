@@ -94,6 +94,11 @@ Navbar scaling
     }
     .members{
         float: left;
+        padding: 1em;
+    }
+    .membersText
+    {
+        padding: 1em;
     }
 }
 
@@ -127,6 +132,10 @@ Navbar scaling
     display: flex;
     justify-content: center;
     align-items: center
+}
+.membersText
+{
+    padding: 1em;
 }
 
 /*
