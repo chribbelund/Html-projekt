@@ -101,7 +101,33 @@ Navbar scaling
   .bar {
     font-size: 3em !important;
   }
+  .projekt{
+  display: grid;
+  grid-template-columns:  20% 80% !important;
+  
+  margin-right: 0.5em;
+  grid-gap: 0.5em;
+  margin: 0.3em !important;
+  height: auto;
+  max-width: 95%;
+  font-size: 0.7em;
+  }
+
+  .projekt img{
+      width: 90px !important;
+      height: 90px !important;
+      margin-left: 0.2em;
+    }
+  .pText{
+      float: right;
+      font-size: 0.5em;
+      max-width: 230px !important;
+      text-align: center;
+      margin-left: 0.2em !important;
+      padding: 2px;
+  }
 }
+
 
 /*
     Medlems formatering for bilder och border
@@ -269,16 +295,30 @@ Skills CSS kod
 .bar.expert::before {
   width: calc(100% - 10px);
 }
-
-#portHeader {
-  margin: 1em;
+/*
+Portfolio
+*/
+.pHeader {
+  margin-left: 3em;
+  margin-top: 1em;
+  margin-right: 3em;
+  
 }
 
 .projekt {
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns:  20% 80%;
+  margin-right: 2em;
   grid-gap: 1em;
   margin: 2em;
   height: auto;
-  max-width: 100%;
+  width: 100%;
+  font-size: 1.4em;
+}
+.projekt img{
+    width: 180px;
+    height: 180px;
+}
+.pText{
+    max-width: 100% ;
 }
