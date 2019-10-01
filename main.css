@@ -50,9 +50,6 @@ body {
   display: none;
 }
 
-.medlemImg{
-  width:90%;
-}
 /*
 Navbar scaling
 */
@@ -97,6 +94,7 @@ Navbar scaling
     float: left;
     padding: 1em;
   }
+  
   .membersText {
     padding: 1em;
   }
@@ -146,6 +144,10 @@ Navbar scaling
   align-items: center
 }
 
+.medlemImg{
+  width:83%;
+}
+
 .allMembers img {
   border-radius: 33.33%;
 }
@@ -168,32 +170,10 @@ Navbar scaling
 
 .membersText {
   padding: 1em;
+  text-align: center;
 }
 
-/*
-    Slideshow kod
-*/
 
-#slideshow {
-  margin: 50px auto;
-  position: static;
-  width: 60px;
-  height: 60px;
-  padding: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-}
-
-.controls {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.text {
-  display: grid;
-  justify-content: center;
-  margin: 2em;
-}
 
 /*.container{
     display: grid;
@@ -268,7 +248,6 @@ Skills CSS kod
   }
 }
 
-
 .bar {
   background-color: #EEE;
   padding: 2px;
@@ -282,7 +261,7 @@ Skills CSS kod
 
 .bar::before {
   content: attr(data-skill);
-  background-color: #f3b0ff;
+  background-color: aqua;
   display: inline-block;
   padding: 5px 0 5px 10px;
   border-radius: inherit;
@@ -290,11 +269,11 @@ Skills CSS kod
 }
 
 .bar.front::before {
-  background-color: #ffcc33;
+  background-color: greenyellow;
 }
 
 .bar.back::before {
-  background-color: #a6cfe3;
+  background-color: yellow;
 }
 
 .bar.learning::before {
