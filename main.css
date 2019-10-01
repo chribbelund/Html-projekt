@@ -123,7 +123,8 @@ Navbar scaling
       max-width: 230px !important;
       text-align: center;
       margin-left: 0.2em !important;
-      padding: 2px;
+      padding: 0.2em !important;
+      margin-left: 3em !important;
   }
 }
 
@@ -225,6 +226,7 @@ Kontakta oss form
 
 .text {
   position: relative;
+  padding: 1em;
 }
 
 #chribbe {
@@ -315,7 +317,12 @@ Portfolio
 .projekt img{
     width: 180px;
     height: 180px;
+    float: left;
 }
 .pText{
-    max-width: 100% ;
+    max-width: 90%;
+    position: relative;
+    padding: 0.5em;
+    margin-left: 1em;
+
 }
