@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="sv">
+
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projektsida</title>
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display&display=swap" rel="stylesheet">
@@ -10,8 +12,9 @@
 <body>
 
     <nav>
+        <button id="hamburger"> ☰ </button>
         <ul class="navbarul">
-            <button id="hamburger"> ☰ </button>
+
             <li class="navbarli">
                 <a href="index.html" class="navbara">Hem</a>
             </li>
@@ -26,20 +29,30 @@
             </li>
         </ul>
     </nav>
-<h1 id="portHeader">På den här portfoliosidan kommer vi presentera lite kort om vilka projekt vi i gruppen jobbat på tidigare:</h1>
-<div class="portInfo"></div>
-<div class="projekt"><img src="pictures/4.jpg"alt=""style="width:200px; height:180px;"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-    Provident ducimus ex quam necessitatibus adipisci laudantium molestias perspiciatis natus deserunt quidem nam sed magnam eius voluptates cupiditate magni, eligendi neque numquam fuga velit cumque fugiat dignissimos! 
-    Saepe illum ex molestias quae neque corporis asperiores necessitatibus. Aliquam aut iusto, accusantium, veritatis voluptate similique at inventore voluptas commodi, dolores laborum neque mollitia temporibus. Cum laboriosam eos earum minima esse adipisci voluptatum accusamus possimus tenetur, sed dignissimos temporibus magni quod rerum impedit dolores? Laborum?
-    </p> </div>
-<div class="projekt"><img src="pictures/3.jpg"alt=""style="width:200px; height:180px;"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora itaque vitae aut porro corrupti libero at. 
-    Commodi velit doloremque aliquid nesciunt praesentium dicta est natus. Ea porro distinctio fugit a, itaque quo, similique voluptatum voluptatibus eveniet quasi vero? Laudantium maxime officiis, itaque molestiae commodi, molestias consequuntur magni dignissimos neque sed aut tenetur necessitatibus ad soluta odio. Quas optio, aspernatur quasi vitae veritatis perferendis iusto? 
-    Laborum neque voluptatibus est deserunt minus officiis provident, itaque veniam veritatis distinctio perferendis assumenda, facilis voluptas?
-    </p></div>
-<div class="projekt"></div>
+    <div class="pHeader">
+    <h1 id="portHeader">På den här portfoliosidan kommer vi presentera lite kort om vilka projekt vi i gruppen jobbat på
+        tidigare:</h1>
+    </div>
+    <div class="projekt"><img src="pictures/java.jpg" alt="">
+        <p class="pText">Vi i gruppen har tidigare jobbat på olika projekt i java. Ett av projekten handlade om att utveckla ett informationssytem
+            för lärare och elever på Hogwarts. Projektet genomfördes i grupper om två personer. Som utvecklingsmiljö använde vi oss utvecklav
+            NetBeans tillsammans med Firebird som databashanterare. 
+        </p>
+    </div>
+    <div class="projekt"><img src="pictures/ur.jpg" alt="">
+        <p class="pText">Vi utvecklade ett spel för ett par år sedan i Unreal Engine som vi kallade för PlayerUnknown's Battlegrounds.
+            Spelet blev en succé. En mycket simpel idé om att 100 spelare möter varandra och den som överlever längst vinner.
+            Spelet skapade nästan en helt ny genre inom spelvärlden kallad "Battle royale".
+        </p>
+    </div>
+    <div class="projekt"><img src="pictures/c.jpg" alt="">
+        <p class="pText">År 2017 utvecklade vi en mobil applikation i C++ åt ett företag. I applikationen kunde man beställa varor från företaget.
 
-</div>
+        </p>
+    </div>
+    <script src="jquery-3.4.1.js"></script>
+    <script src="main.js"></script>
 </body>
-<script src="jquery-3.4.1.js"></script>
-<script src="main.js"></script>
+
+
 </html>

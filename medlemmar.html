@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html lang="sv">
+
 <head>
     <meta charset="utf-8">
     <title>Projektsida</title>
@@ -10,8 +11,9 @@
 <body>
 
     <nav>
+        <button id="hamburger"> ☰ </button>
         <ul class="navbarul">
-            <button id="hamburger"> ☰ </button>
+
             <li class="navbarli">
                 <a href="index.html" class="navbara">Hem</a>
             </li>
@@ -27,27 +29,33 @@
         </ul>
     </nav>
 
-<div>
-    <h2 class="membersText">
-        Det här är våra gruppmedlemmar för HTML projektet,
-        Klicka på en medlem för att få mer information om individuell medlem.
-    </h2>
-</div>
-<div class="row">
-    <div class="allMembers">
-            <a href="christoffer.html"><img src="pictures/1pojke.png" style="width:90%"></a>
+    <div>
+        <h2 class="membersText">
+            Det här är våra gruppmedlemmar för HTML projektet,
+            Klicka på en medlem för att få mer information om individuell medlem.
+        </h2>
     </div>
-    <div class="allMembers">
-            <a href="oscar.html"><img src="pictures/2pojke.png" style="width:90%"></a>
+    <div class="row">
+        <div class="allMembers">
+            <a href="christoffer.html"><img src="pictures/1pojke.png" alt="" class="medlemImg"></a>
+        </div>
+        <div class="allMembers">
+            <a href="oscar.html"><img src="pictures/2pojke.png" alt="" class="medlemImg"></a>
+        </div>
+        <div class="allMembers">
+            <a href="anton.html"><img src="pictures/3pojke.png" alt="" class="medlemImg"></a>
+        </div>
     </div>
-    <div class="allMembers">
-            <a href="anton.html"><img src="pictures/3pojke.png" style="width:90%"></a>
-    </div>  
-</div>
-<h3 class="membersText">
-        Lite om oss
-</h3>
+    <h3 class="membersText">
+        Dem tre medlemmarna hade återvänt från från sina äventyr under sommarens friska dagar.
+        <br>Där dem tre medlemmarna börjat sin universitetsgång under tre olika terminer var det dags,
+        <br>dags att visa sina kunskaper och få fram en hemsida från grunden.
+        <br>Med Christoffer som blev en mästare på Javascript, Anton en höjdare på HTML och Oscar en guru på CSS,
+        <br>föddes denna hemsida.
+
+    </h3>
+    <script src="jquery-3.4.1.js"></script>
+    <script src="main.js"></script>
 </body>
-<script src="jquery-3.4.1.js"></script>
-<script src="main.js"></script>
+
 </html>
