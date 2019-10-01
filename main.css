@@ -50,9 +50,6 @@ body {
   display: none;
 }
 
-.medlemImg{
-  width:90%;
-}
 /*
 Navbar scaling
 */
@@ -97,6 +94,7 @@ Navbar scaling
     float: left;
     padding: 1em;
   }
+  
   .membersText {
     padding: 1em;
   }
@@ -118,6 +116,10 @@ Navbar scaling
   display: flex;
   justify-content: center;
   align-items: center
+}
+
+.medlemImg{
+  width:90%;
 }
 
 .allMembers img {
@@ -142,6 +144,7 @@ Navbar scaling
 
 .membersText {
   padding: 1em;
+  text-align: center;
 }
 
 
@@ -219,7 +222,6 @@ Skills CSS kod
   }
 }
 
-
 .bar {
   background-color: #EEE;
   padding: 2px;
@@ -233,7 +235,7 @@ Skills CSS kod
 
 .bar::before {
   content: attr(data-skill);
-  background-color: #f3b0ff;
+  background-color: aqua;
   display: inline-block;
   padding: 5px 0 5px 10px;
   border-radius: inherit;
@@ -241,11 +243,11 @@ Skills CSS kod
 }
 
 .bar.front::before {
-  background-color: #ffcc33;
+  background-color: greenyellow;
 }
 
 .bar.back::before {
-  background-color: #a6cfe3;
+  background-color: yellow;
 }
 
 .bar.learning::before {
